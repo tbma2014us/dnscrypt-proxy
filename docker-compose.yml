@@ -4,8 +4,6 @@ services:
     container_name: server
     build: .
     command: /go/bin/dnscrypt-proxy -config /etc/dnscrypt-proxy/dnscrypt-proxy.toml
-    volumes:
-      - .:/etc/dnscrypt-proxy/
     ports:
       - 53:53/udp
     dns: 127.0.0.1
