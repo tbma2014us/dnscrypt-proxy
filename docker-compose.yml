@@ -1,7 +1,7 @@
 version: '2'
 services:
   dnscrypt-proxy:
-    container_name: server
+    container_name: dnscrypt-proxy
     build: .
     command: /go/bin/dnscrypt-proxy -config /etc/dnscrypt-proxy/dnscrypt-proxy.toml
     ports:
